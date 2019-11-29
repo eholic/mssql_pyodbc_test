@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sql1:
+    image: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: <YourStrong@Passw0rd>
+    ports:
+      - "1433:1433"
